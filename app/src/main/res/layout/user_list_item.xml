@@ -22,6 +22,7 @@
             android:text="사람 이름"
             android:textSize="16sp"/>
         <TextView
+            android:id="@+id/userIdTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"

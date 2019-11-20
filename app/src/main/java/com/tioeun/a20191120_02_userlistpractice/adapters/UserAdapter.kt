@@ -26,6 +26,14 @@ class UserAdapter(context: Context, res : Int, list:ArrayList<User>) : ArrayAdap
 
         var row = tempRow!!
 
+        var categoryColorImg = row.findViewById<ImageView>(R.id.categoryColorImg)
+        var userNameTxt = row.findViewById<TextView>(R.id.userNameTxt)
+        var userIdTxt = row.findViewById<TextView>(R.id.userIdTxt)
+
+        var data = mList.get(position)
+
+        userIdTxt.text = data.loginId
+        userNameTxt.text = data.name
 
 
         return row
