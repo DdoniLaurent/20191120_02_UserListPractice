@@ -63,6 +63,8 @@ class CategorySpinnerAdapter(context: Context, res : Int, list:ArrayList<Categor
 //        categoryColorImg.setBackgroundColor(Color.parseColor(data.color))
         categoryColorImg.background.setColorFilter(Color.parseColor(data.color), PorterDuff.Mode.SRC_ATOP)
 
+
+
         return row
     }
 
