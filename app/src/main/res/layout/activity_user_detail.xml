@@ -46,6 +46,17 @@
         android:layout_marginTop="10dp"
         android:text="08년 1월 2일 가입완료"
         android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="만료 일자"/>
+    <TextView
+        android:id="@+id/expireDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2019-01-01"
+        android:textSize="20sp"/>
     <Button
         android:layout_marginTop="10dp"
         android:layout_width="100dp"

@@ -37,7 +37,7 @@ class UserDetailActivity : BaseActivity() {
         userNameEdt.setText(mUser?.name)
 
         createdAtTxt.text = mUser?.getFormattedCreatedAt()
-
+        expireDateTxt.text = mUser?.getExpireDateString()
 
         categorySpinnerAdapter = CategorySpinnerAdapter(mContext, categoryList)
         categorySelectSpinner.adapter = categorySpinnerAdapter
