@@ -2,6 +2,7 @@ package com.tioeun.a20191119_01_banklistpractice.adapters
 
 import android.content.Context
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,7 +37,9 @@ class CategorySpinnerAdapter(context: Context, res : Int, list:ArrayList<Categor
         categoryTitleTxt.text = data.title
 
 //        String => Color로 변경.
-        categoryColorImg.setBackgroundColor(Color.parseColor(data.color))
+//        categoryColorImg.setBackgroundColor(Color.parseColor(data.color))
+
+        categoryColorImg.background.setColorFilter(Color.parseColor(data.color), PorterDuff.Mode.SRC_ATOP)
 
         return row
     }
@@ -58,6 +61,7 @@ class CategorySpinnerAdapter(context: Context, res : Int, list:ArrayList<Categor
 
 //        String => Color로 변경.
 //        categoryColorImg.setBackgroundColor(Color.parseColor(data.color))
+        categoryColorImg.background.setColorFilter(Color.parseColor(data.color), PorterDuff.Mode.SRC_ATOP)
 
         return row
     }
